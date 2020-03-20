@@ -52,6 +52,7 @@
         android:textColor="@color/pinkQuestion"/>
 
     <CheckBox
+        android:id="@+id/checkMonday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -61,6 +62,7 @@
         android:text="Monday"/>
 
     <CheckBox
+        android:id="@+id/checkTuesday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -69,6 +71,7 @@
         android:text="Tuesday"/>
 
     <CheckBox
+        android:id="@+id/checkWednesday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -77,6 +80,7 @@
         android:text="Wednesday"/>
 
     <CheckBox
+        android:id="@+id/checkThursday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -85,6 +89,7 @@
         android:text="Thursday"/>
 
     <CheckBox
+        android:id="@+id/checkFriday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -93,6 +98,7 @@
         android:text="Friday"/>
 
     <CheckBox
+        android:id="@+id/checkSaturday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -101,6 +107,7 @@
         android:text="Saturday"/>
 
     <CheckBox
+        android:id="@+id/checkSunday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -109,7 +116,7 @@
         android:text="Sunday"/>
 
     <TextView
-        android:id="@+id/third_question"
+        android:id="@+id/et_task"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -122,14 +129,25 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/pinkQuestion"/>
 
-    <EditText
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
         android:hint="Set time"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="?android:attr/selectableItemBackground"
         />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:background="@color/pinkQuestion"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
